@@ -4,6 +4,14 @@ import productHeadphones from "@/assets/product-headphones.jpg";
 import productSmartwatch from "@/assets/product-smartwatch.jpg";
 import productKeyboard from "@/assets/product-keyboard.jpg";
 import productVR from "@/assets/product-vr.jpg";
+import productEarbuds from "@/assets/product-earbuds.jpg";
+import productCamera from "@/assets/product-camera.jpg";
+import productTablet from "@/assets/product-tablet.jpg";
+import productMouse from "@/assets/product-mouse.jpg";
+import productSpeaker from "@/assets/product-speaker.jpg";
+import productSmartphone from "@/assets/product-smartphone.jpg";
+import productController from "@/assets/product-controller.jpg";
+import productDrone from "@/assets/product-drone.jpg";
 import logo from "@/assets/logo.png";
 
 const products = [
@@ -34,6 +42,62 @@ const products = [
     name: "نظارة الواقع الافتراضي",
     price: "١٧٩٩ ريال",
     description: "مرحباً في المستقبل! أنا نظارة الواقع الافتراضي. مع إضاءتي النيونية الساحرة وتقنيتي المتطورة، سأنقلك إلى عوالم لا حدود لها. ارتدني وانطلق في مغامرات ثلاثية الأبعاد لم تختبرها من قبل!"
+  },
+  {
+    id: 5,
+    image: productEarbuds,
+    name: "سماعات أذن لاسلكية نيون",
+    price: "٥٩٩ ريال",
+    description: "أهلاً! أنا سماعات الأذن النيونية اللاسلكية. صغيرة الحجم لكن قوية الصوت! تصميمي المتوهج الأرجواني والأزرق سيجعلك محط الأنظار. مع تقنية البلوتوث المتقدمة وعمر بطارية طويل، سأكون رفيقك المثالي في كل مكان!"
+  },
+  {
+    id: 6,
+    image: productCamera,
+    name: "كاميرا ذكية هولوجرافية",
+    price: "٢٤٩٩ ريال",
+    description: "مرحباً بك! أنا الكاميرا الذكية الهولوجرافية. التقط لحظاتك المميزة بألوان نيونية خيالية وجودة 8K فائقة الوضوح. مع شاشتي المضيئة وتأثيراتي الخاصة، سأحول صورك إلى أعمال فنية مستقبلية!"
+  },
+  {
+    id: 7,
+    image: productTablet,
+    name: "تابلت مستقبلي متطور",
+    price: "٣٢٩٩ ريال",
+    description: "السلام عليكم! أنا التابلت المستقبلي المتطور. شاشتي الهولوجرافية الضخمة وحوافي النيونية المتوهجة ستأخذك لعالم من الإبداع والترفيه. مثالي للرسم، الألعاب، والعمل. أنا بوابتك للمستقبل الرقمي!"
+  },
+  {
+    id: 8,
+    image: productMouse,
+    name: "ماوس ألعاب RGB احترافي",
+    price: "٤٩٩ ريال",
+    description: "أهلاً بك! أنا ماوس الألعاب الاحترافي. مع إضاءة RGB الديناميكية وتصميمي الانسيابي، سأعطيك دقة وسرعة فائقة في كل حركة. مستشعراتي المتطورة وأزراري القابلة للبرمجة ستجعلك بطلاً لا يُقهر!"
+  },
+  {
+    id: 9,
+    image: productSpeaker,
+    name: "مكبر صوت نيون لاسلكي",
+    price: "٨٩٩ ريال",
+    description: "مرحباً! أنا مكبر الصوت النيوني اللاسلكي. صوتي القوي وإضاءتي الراقصة مع الموسيقى ستحول أي مكان إلى حفلة مذهلة! مع تقنية الصوت المحيطي ٣٦٠ درجة وتصميمي المضاد للماء، أنا جاهز للمغامرة معك!"
+  },
+  {
+    id: 10,
+    image: productSmartphone,
+    name: "هاتف ذكي هولوجرافي",
+    price: "٣٩٩٩ ريال",
+    description: "السلام عليكم! أنا الهاتف الذكي الهولوجرافي. شاشتي المتوهجة وحوافي النيونية ستبهرك بكل نظرة. مع أقوى معالج وأحدث تقنيات الذكاء الاصطناعي، سأكون أكثر من مجرد هاتف - سأكون مساعدك الشخصي الذكي!"
+  },
+  {
+    id: 11,
+    image: productController,
+    name: "يد تحكم ألعاب RGB",
+    price: "٦٩٩ ريال",
+    description: "أهلاً! أنا يد التحكم الاحترافية RGB. أزراري المضيئة وتصميمي المريح سيجعلان تجربة اللعب لديك لا مثيل لها. مع اهتزازات عالية الدقة واتصال لاسلكي فائق السرعة، استعد للفوز في كل مباراة!"
+  },
+  {
+    id: 12,
+    image: productDrone,
+    name: "طائرة درون نيون متطورة",
+    price: "٤٥٩٩ ريال",
+    description: "مرحباً في السماء! أنا الطائرة الدرون النيونية المتطورة. مع أضواء LED الساحرة وكاميرتي 4K المثبتة، سألتقط لك صوراً وفيديوهات مذهلة من السماء. تحكم ذكي، طيران سلس، ومغامرات لا تنتهي تنتظرك معي!"
   }
 ];
 
@@ -78,7 +142,7 @@ const Index = () => {
 
         {/* Products Grid */}
         <main className="container mx-auto px-4 pb-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8 max-w-[1600px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-[1800px] mx-auto">
             {products.map((product, index) => (
               <div 
                 key={product.id}
